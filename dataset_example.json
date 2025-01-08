@@ -1,0 +1,16 @@
+{
+    "training_data": [
+        {
+            "text": "Quanto costa la spedizione?",
+            "category": "spedizione"
+        },
+        {
+            "text": "Vorrei sapere il prezzo di consegna",
+            "category": "spedizione"
+        },
+        {
+            "text": "Come funziona il reso?",
+            "category": "reso"
+        }
+    ]
+}
