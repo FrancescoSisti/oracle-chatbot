@@ -9,7 +9,8 @@ class TrainingTemplates
         return [
             'customer_service' => self::getCustomerServiceTemplate(),
             'e_commerce' => self::getECommerceTemplate(),
-            'support_tech' => self::getTechnicalSupportTemplate()
+            'support_tech' => self::getTechnicalSupportTemplate(),
+            'daily_conversations' => self::getDailyConversationTemplates()
         ];
     }
 
@@ -94,6 +95,73 @@ class TrainingTemplates
             ['text' => 'Non trovo l\'opzione per...', 'category' => 'funzionalita'],
             ['text' => 'Dove posso trovare...?', 'category' => 'funzionalita'],
             ['text' => 'Come si attiva...?', 'category' => 'funzionalita']
+        ];
+    }
+
+    public static function getDailyConversationTemplates(): array
+    {
+        return [
+            // Saluti e convenevoli
+            ['text' => 'Buongiorno', 'category' => 'saluto'],
+            ['text' => 'Ciao, come stai?', 'category' => 'saluto'],
+            ['text' => 'Salve, come va?', 'category' => 'saluto'],
+            ['text' => 'Buonasera', 'category' => 'saluto'],
+            ['text' => 'Ciao, è bello rivederti', 'category' => 'saluto'],
+
+            // Conversazione generale
+            ['text' => 'Che tempo fa oggi?', 'category' => 'conversazione'],
+            ['text' => 'Come è andata la giornata?', 'category' => 'conversazione'],
+            ['text' => 'Hai programmi per il weekend?', 'category' => 'conversazione'],
+            ['text' => 'Che ne pensi di questo tempo?', 'category' => 'conversazione'],
+
+            // Stati d'animo
+            ['text' => 'Sono molto felice oggi', 'category' => 'stato_emotivo'],
+            ['text' => 'Mi sento un po\' giù', 'category' => 'stato_emotivo'],
+            ['text' => 'Sono stanco', 'category' => 'stato_emotivo'],
+            ['text' => 'Oggi è una bellissima giornata', 'category' => 'stato_emotivo'],
+
+            // Richieste di aiuto
+            ['text' => 'Potresti aiutarmi?', 'category' => 'richiesta_aiuto'],
+            ['text' => 'Ho bisogno di un consiglio', 'category' => 'richiesta_aiuto'],
+            ['text' => 'Non so cosa fare', 'category' => 'richiesta_aiuto'],
+
+            // Ringraziamenti
+            ['text' => 'Grazie mille', 'category' => 'ringraziamento'],
+            ['text' => 'Ti ringrazio', 'category' => 'ringraziamento'],
+            ['text' => 'Sei stato molto gentile', 'category' => 'ringraziamento'],
+
+            // Congedi
+            ['text' => 'Arrivederci', 'category' => 'congedo'],
+            ['text' => 'A presto', 'category' => 'congedo'],
+            ['text' => 'Buona giornata', 'category' => 'congedo'],
+            ['text' => 'Ci vediamo', 'category' => 'congedo'],
+
+            // Scuse
+            ['text' => 'Mi dispiace', 'category' => 'scusa'],
+            ['text' => 'Scusami tanto', 'category' => 'scusa'],
+            ['text' => 'Non volevo', 'category' => 'scusa'],
+
+            // Richieste di opinione
+            ['text' => 'Cosa ne pensi?', 'category' => 'richiesta_opinione'],
+            ['text' => 'Qual è la tua opinione?', 'category' => 'richiesta_opinione'],
+            ['text' => 'Mi interessa il tuo parere', 'category' => 'richiesta_opinione'],
+
+            // Richieste di chiarimento
+            ['text' => 'Non ho capito bene', 'category' => 'richiesta_chiarimento'],
+            ['text' => 'Puoi ripetere?', 'category' => 'richiesta_chiarimento'],
+            ['text' => 'Non sono sicuro di aver compreso', 'category' => 'richiesta_chiarimento'],
+
+            // Domande sulle capacità
+            ['text' => 'cosa sai fare?', 'category' => 'capacita'],
+            ['text' => 'quali sono le tue capacità?', 'category' => 'capacita'],
+            ['text' => 'come puoi aiutarmi?', 'category' => 'capacita'],
+            ['text' => 'cosa puoi fare per me?', 'category' => 'capacita'],
+            ['text' => 'in cosa sei specializzato?', 'category' => 'capacita'],
+            ['text' => 'quali sono le tue funzioni?', 'category' => 'capacita'],
+            ['text' => 'dimmi cosa sai fare', 'category' => 'capacita'],
+            ['text' => 'che tipo di assistenza fornisci?', 'category' => 'capacita'],
+            ['text' => 'come funzioni?', 'category' => 'capacita'],
+            ['text' => 'quali sono i tuoi compiti?', 'category' => 'capacita']
         ];
     }
 }

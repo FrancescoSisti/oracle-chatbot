@@ -19,5 +19,10 @@ class DatabaseSeeder extends Seeder
             'name' => 'Test User',
             'email' => 'test@example.com',
         ]);
+
+        // Carica i dati di training
+        $this->call([
+            TrainingDataSeeder::class
+        ]);
     }
 }

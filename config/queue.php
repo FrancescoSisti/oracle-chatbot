@@ -72,6 +72,22 @@ return [
             'after_commit' => false,
         ],
 
+        'c4-processing' => [
+            'driver' => 'database',
+            'table' => 'jobs',
+            'queue' => 'c4-processing',
+            'retry_after' => 300, // 5 minuti per job di processing
+            'after_commit' => false,
+        ],
+
+        'c4-training' => [
+            'driver' => 'database',
+            'table' => 'jobs',
+            'queue' => 'c4-training',
+            'retry_after' => 600, // 10 minuti per job di training
+            'after_commit' => false,
+        ],
+
     ],
 
     /*
